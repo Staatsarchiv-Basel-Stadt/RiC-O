@@ -1,0 +1,35 @@
+name: consistency check
+
+on:
+  push:
+  pull_request:
+
+env:
+  ONTOLOGY_PATH: "ontology/current-version"
+
+jobs:
+  check-consistency:
+    name: "Check consistency"
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "Checkout code"
+        uses: actions/checkout@v4
+      - name: "Setup Java"
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'oracle'
+          java-version: '21'
+      - name: "Setup Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: "Install Owlready2"
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+          pip install owlready2
+          deactivate
+      - name: "Carry out consistency check"
+        run: |
+          source venv/bin/activate
+          python .github/workflows/consistency_check.py
