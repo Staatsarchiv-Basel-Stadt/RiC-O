@@ -14,8 +14,7 @@ Version 1.0.1 modified a few details in the introduction, fixed a few typos in t
 
 RiC-O 1.1 is **fully compliant with RiC-CM 1.0**, which is available in the corresponding repository [https://github.com/ICA-EGAD/RiC-CM](https://github.com/ICA-EGAD/RiC-CM).
                
-The OWL/RDF file of RiC-O 1.1 is stored in the [ontology/current-version](./ontology/current-version) folder of this repository, with accompanying material, including a HTML version provided for human readers.
-The repository also contains other resources, among which examples and diagrams.
+The OWL/RDF file of RiC-O 1.1 is stored in the [ontology/current-version](./ontology/current-version) folder of this repository, with accompanying material, including a HTML version provided for human readers. The repository also contains other resources, among which examples and diagrams.
 
 **RiC-O 1.1 is also accessible to humans and machines through its IRI, [https://www.ica.org/standards/RiC/ontology](https://www.ica.org/standards/RiC/ontology)**.
 

@@ -81,7 +81,7 @@ Finally, if you need some practical solution to help you display or query a grap
 
 **In RiC-O 1.0.1, the IRI of `rico:hasOrHadSomeMembersWithDocumentaryFormType` was corrected** ('with' replaced by 'With').
 
-**In RiC-O 1.1, `rico:hasOrHadCategory` was replaced with `rico:hasOrHadType`** (and the inverse object property, **isOrWascategoryOf**, was replaced with `rico:isOrWasTypeOf`.)
+**In RiC-O 1.1, hasOrHadCategory was replaced with `rico:hasOrHadType`** (and the inverse object property, isOrWascategoryOf, was replaced with `rico:isOrWasTypeOf`.) The variant subproperties of `rico:isRelatedTo`, hasOrHadSomeMembersWithCategory and hasOrHadAllMembersWithCategory (and their inverse properties) also were renamed the same.
 
 In addition to these changes, **many object properties have been added, which may help to produce more precise data, or data which would be easier to process**. The inverse properties were also created, though we most often are not mentioning them below. The following is a non-exhaustive list of these additions:
 - **a property (`rico:recordResourceHasSourceOfInformation`) was added to connect a Record Resource to a Record Resource on which its content is based.** This property, and its inverse one, replace, as concerns Record Resource, the 'source' datatype property and the 'hasSource'/'isSourceOf' object properties, which had been removed in RiC-O 1.0, as already said above.
